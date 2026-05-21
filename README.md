@@ -6,17 +6,25 @@ Three agents (ResearchAgent, CriticAgent, SummarizerAgent) collaborate through c
 using the HuggingFace Inference API.
 
 ## Project Structure
+```
 multi_agent/
 ├── core/          # Message, Memory, Orchestrator
 ├── agents/        # BaseAgent, ResearchAgent, CriticAgent, SummarizerAgent
 ├── tools/         # BaseTool, RAGTool
 ├── exceptions.py  # Custom exceptions
 └── main.py        # Entry point
+```
 
 ## How to Run
+```bash
 pip install requests python-dotenv huggingface_hub
+```
 
-Create .env file:
+Create `.env` file:
+```
 HF_TOKEN=your_huggingface_token
+```
 
+```bash
 python3 main.py
+```
